@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .no-scrollbar::-webkit-scrollbar {
+      display: none; 
+    }
+    
+    .no-scrollbar {
+      -ms-overflow-style: none; 
+      scrollbar-width: none;  
+    }
+    .scrollbar {
+        scrollbar-width: auto;
+        scrollbar-color: var(--scrollbar-thumb, initial) var(--scrollbar-track, initial);
+    }
+    
+  }
+  
+
+  hr {
+    @apply dark:border-gray-700
+  }
+.card {
+    @apply m-10 p-5 bg-white rounded shadow-lg  overflow-hidden
+}
+.btn {
+    @apply border-2 border-red-500 rounded-full px-2 hover:bg-blue-500 transition ease-in duration-300
+}
+.con {
+    @apply p-3  items-center cursor-pointer hover:bg-secondary-400 hover:text-white hover:fill-white dark:fill-secondary-800
+}
+.set {
+    @apply  items-center hover:bg-gray-200 my-2 px-3.5 rounded-3xl cursor-pointer
+}
+.lin {
+    @apply py-1 px-4 hover:bg-black cursor-pointer whitespace-nowrap
+}
+.topic {
+    @apply text-100 py-0.5 pl-10 hover:bg-secondary-800 cursor-pointer dark:hover:bg-darkColor-500
+}
+.but {
+    @apply flex items-center bg-secondary-400 text-white py-2.5 px-4 cursor-pointer rounded-md
+}
+.para {
+    @apply mb-3 text-400
+}
+.sign {
+    @apply text-secondary-910 dark:text-darkColor-800
+}
+.doc {
+    @apply text-red-800 dark:text-darkColor-600
+}
+.navli {
+    @apply bg-secondary-940 py-2 my-1 pl-6  rounded-md text-start
+}
+.gry {
+    @apply bg-secondary-700 rounded-md py-5 text-center cursor-pointer text-400 hover:bg-black hover:text-white dark:bg-darkColor-500 hover:dark:bg-darkColor-200
+}
+.shift {
+    @apply  bg-secondary-600 h-8 py-1 px-1 cursor-pointer hover:bg-black hover:px-2
+}
